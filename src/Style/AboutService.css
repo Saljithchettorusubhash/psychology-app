@@ -1,0 +1,71 @@
+.about-service {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.about-service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    color: #373a6d;
+    padding: 10px;
+}
+.about-service-content h2 {
+    font-size: 45px;
+}
+.about-list {
+    display: flex;
+    justify-content: center;
+    color: #373a6d;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+
+
+    
+}
+.feautre-index {
+    padding: 10px;
+}
+.list-services{
+    color: #373a6d;
+    padding: 20px;
+ 
+}
+.feautre-cards{
+    text-align: center;
+}
+
+
+
+@media (min-width: 1200px) {
+    .about-service{
+        gap: 30px;
+    }
+   
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-service {
+        gap: 35px;
+    }
+    .about-list {
+        padding: 1%;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-list{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .about-list{
+        margin-top: 30px;
+    }
+}

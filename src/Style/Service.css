@@ -1,0 +1,221 @@
+/* Global styles for the service card */
+.service-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #BEEEF7;
+  padding: 20px;
+}
+
+.service-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.service-card-body {
+  margin-top: 10px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Global styles */
+.Service {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 0 50px;
+  line-height: 32px;
+  color: #373a6d;
+}
+
+.service-content h3 {
+  color: #373a6d;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.animation-lottie {
+  width: 400px;
+  margin: 0 auto 2rem auto;
+}
+
+.animation-lottie .lottie {
+  width: 100%;
+}
+.card-control {
+  margin-bottom: 20px;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Service {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .service-content {
+    padding: 0 50px;
+  }
+
+  .service-content h3 {
+    font-size: 45px;
+  }
+
+  .animation-lottie {
+    width: 400px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Service {
+    flex-direction: row;
+  }
+
+  
+  .service-content {
+    padding: 0 50px;
+  }
+
+  .service-content h3 {
+    font-size: 45px;
+  }
+
+  .animation-lottie {
+    width: 300px;
+  }
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Service {
+    flex-direction: column;
+  }
+
+  .service-column {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .service-content {
+    padding: 0 20px;
+  }
+
+  .service-content h3 {
+    font-size: 45px;
+  }
+
+  .animation-lottie {
+    width: 250px;
+  }
+  .services-list {
+    margin-left: 0px;
+    padding: 20px;
+  }
+  .service-content{
+    margin-top: 30px;
+  }
+  .animation-lottie {
+    width: 350px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .Service {
+    flex-direction: column;
+  }
+
+  .service-column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .service-content {
+    padding: 0 20px;
+  }
+
+  .service-content h3 {
+    font-size: 45px;
+  }
+  .services-list {
+    margin-left: 0px;
+    padding: 20px;
+  }
+
+  .animation-lottie {
+    width: 360px;
+  }
+  .service-content {
+    margin-top: 30px;
+  }
+  
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .Service {
+    flex-direction: column;
+  }
+
+  .service-column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .service-content {
+    padding: 0 30px;
+  }
+
+  .service-content h3 {
+    font-size: 45px;
+  }
+
+  .animation-lottie {
+    width: 350px;
+  }
+
+
+}

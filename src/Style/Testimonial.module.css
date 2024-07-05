@@ -1,0 +1,174 @@
+/* Testimonial.module.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html, body {
+  overflow-x: hidden; /* Prevent horizontal overflow at the root level */
+}
+
+.container {
+  max-width: 100%;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  overflow: hidden; /* Prevent horizontal overflow */
+}
+
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #373a6d;
+}
+
+.swiperContainer {
+  height: 40rem; /* Reduced height to make the component smaller */
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden; /* Prevent horizontal overflow */
+}
+
+.swiperSlide {
+  width: 30rem; /* Adjusted width to maintain consistency */
+  height: auto; /* Height auto to adjust dynamically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #373a6d;
+}
+
+@media (max-width: 500px) {
+  .swiperContainer {
+    height: 35rem; /* Reduced height for smaller screens */
+  }
+  .swiperSlide {
+    width: 28rem !important;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 100%; /* Ensure card takes full width of the slide */
+  text-align: center;
+  position: relative; /* Ensure the pseudo-elements are positioned correctly */
+  overflow: hidden; /* Prevent content overflow within the card */
+  color: #373a6d;
+}
+
+.image {
+  width: 100px; /* Ensure consistent size for images */
+  height: 100px; /* Ensure consistent size for images */
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.sliderController {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%; /* Ensure controller is properly positioned */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem; /* Add padding for better spacing */
+}
+
+.sliderController .swiper-button-next {
+  transform: translateX(0); /* Ensure correct positioning */
+}
+
+@media (max-width: 990px) {
+  .sliderController .swiper-button-next {
+    left: auto !important;
+    transform: translateX(0) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .sliderController .swiper-button-next {
+    left: auto !important;
+    transform: translateX(0) !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .sliderController .swiper-button-prev {
+    left: auto !important;
+    transform: translateX(0) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .sliderController .swiper-button-prev {
+    left: auto !important;
+    transform: translateX(0) !important;
+  }
+}
+
+.sliderController .sliderArrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.sliderController .sliderArrow ion-icon {
+  font-size: 1.5rem; /* Decrease font size of the arrow */
+  color: #222224;
+}
+
+.sliderController .sliderArrow::after {
+  content: '';
+}
+
+.swiperPagination {
+  position: relative;
+  width: 15rem !important;
+  bottom: 1rem;
+}
+
+.swiperPagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiperPagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+/* Remove the original shadows */
+.swiper-slide-shadow-left, 
+.swiper-slide-shadow-right {
+  display: none; /* Hide Swiper's original shadows */
+}
+
+/* Add custom shadow styles */
+.swiperSlide:not(.swiper-slide-active) .card::before,
+.swiperSlide:not(.swiper-slide-active) .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03); /* Lighter custom shadow */
+  border-radius: 8px; /* Match the card's border radius */
+}

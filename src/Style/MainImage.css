@@ -1,0 +1,9 @@
+.main-image {
+    position: relative;
+    z-index: 1; /* Ensure it is above the fixed background */
+    height: 100vh; /* Ensure it covers only the viewport height */
+    overflow: hidden; /* Prevent content from overflowing */
+    margin-bottom: 0; /* Remove bottom margin if any */
+  }
+  
+  

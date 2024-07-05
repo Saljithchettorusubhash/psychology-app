@@ -1,0 +1,50 @@
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.accordion-item {
+  margin-bottom: 4px;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordionButton {
+  background-color: #373A6D;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.accordionButton h3 {
+  margin: 0;
+  color: white;
+}
+
+.accordionButton span {
+  font-size: 24px;
+}
+
+.accordion-content {
+  background-color: white;
+  padding: 15px;
+}
+
+.accordion-content p {
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+.service-family {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+.service-family-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: #373a6d;
+
+}
+.family-image {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    margin-right: 30px;
+    
+}
+.family-image img {
+    width: 100%;
+    padding: 30px;
+}
